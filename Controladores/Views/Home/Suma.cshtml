@@ -1,0 +1,15 @@
+﻿@model Controladores.Models.SumaViewModel
+@{
+    Layout = "Layout";
+} 
+
+<form action="~/Home/Resultado" method="post">
+    <label>Numero 1:</label>
+    <input type="number" name="numero1" value="@Model.Numero1"/> <br/>
+    <label>Numero 2:</label>
+    <input type="number" name="numero2" value="@Model.Numero2"/><br />
+
+    <input type="submit" value="Sumar"/><br />
+
+    <label>La suma es: @Model.Resultado</label>
+</form>

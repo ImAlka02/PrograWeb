@@ -1,0 +1,22 @@
+﻿@model PresidentesMexico.Models.ViewModels.IndexViewModel
+@{
+    Layout = "Layout";
+}
+
+<div class="imagenes">
+    <ul>
+        @foreach (var p in Model.Presidentes)
+        {
+            <li>
+                <a href="~/Home/Biografia/@(p.Nombre.Replace(" ","-"))">
+                    <img src="~/presidentes/@(p.Id).jpg">
+                    <p>
+                        @p.Nombre
+                        <br>@p.Periodo
+                    </p>
+                </a>
+            </li>
+        }
+        
+    </ul>
+</div>

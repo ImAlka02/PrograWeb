@@ -1,0 +1,49 @@
+﻿@model PresidentesMexico.Models.ViewModels.BiografiaViewModel
+@{
+    Layout = "Layout";  
+}
+
+<h2 class="titulo">@Model.Nombre</h2>
+<div class="informacion">
+    <img class="foto" src="~/presidentes/@(Model.Id).jpg">
+    <div class="datos">
+        <div class="fila1">
+            <div>
+                <h4>Fecha de Nacimiento:</h4>
+                <a>@Model.FechaNacimiento</a>
+            </div>
+            <div>
+                <h4>Fecha de Fallecimiento:</h4>
+                <a>@Model.FechaDefuncionNacimiento</a>
+            </div>
+            <div>
+                <h4>Ciudad de Nacimiento:</h4>
+                <a>@Model.CiudadNacimiento</a>
+            </div>
+            <div>
+                <h4>Estado:</h4>
+                <a>@Model.EstadoNacimiento</a>
+            </div>
+            <div>
+                <h4>Ocupación:</h4>
+                <a>@Model.Ocupacion</a>
+            </div>
+            <div>
+                <h4>Inicio de gobierno:</h4>
+                <a>@Model.InicioGobierno</a>
+            </div>
+            <div>
+                <h4>Termino de gobierno:</h4>
+                <a>@Model.FinGobierno</a>
+            </div>
+            <div>
+                <h4>Partido Político:</h4>
+                <a><img src="~/partidos/@(Model.IdPartido).jpg" height="20"> @Model.NombrePartido</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<h2 class="breve">Breve Historia</h2>
+<p class="historia">@Model.Biografia</p>
+
