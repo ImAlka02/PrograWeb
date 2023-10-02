@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad 2", "Unidad 2", "{B0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MexicoEstados", "MexicoEstados\MexicoEstados.csproj", "{ABA31997-3DF0-4203-A4ED-D00DF71F98A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresidentesMexico", "PresidentesMexico\PresidentesMexico.csproj", "{9C108BE4-BD63-4150-8CC7-D4CD158FA825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresidentesMexico", "PresidentesMexico\PresidentesMexico.csproj", "{9C108BE4-BD63-4150-8CC7-D4CD158FA825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peliculas", "Peliculas\Peliculas.csproj", "{FFF5D699-9790-49A0-B6AC-71590E293B9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{9C108BE4-BD63-4150-8CC7-D4CD158FA825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C108BE4-BD63-4150-8CC7-D4CD158FA825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C108BE4-BD63-4150-8CC7-D4CD158FA825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF5D699-9790-49A0-B6AC-71590E293B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF5D699-9790-49A0-B6AC-71590E293B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF5D699-9790-49A0-B6AC-71590E293B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF5D699-9790-49A0-B6AC-71590E293B9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{34748555-F2BD-4A16-ADA4-889163F6961B} = {73843D96-BAD5-41F4-A99E-A7A5B8EC29AE}
 		{ABA31997-3DF0-4203-A4ED-D00DF71F98A8} = {B0E6680A-E7C3-4059-A5FF-18CE4CC3B26F}
 		{9C108BE4-BD63-4150-8CC7-D4CD158FA825} = {B0E6680A-E7C3-4059-A5FF-18CE4CC3B26F}
+		{FFF5D699-9790-49A0-B6AC-71590E293B9D} = {B0E6680A-E7C3-4059-A5FF-18CE4CC3B26F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAC80BAE-B3DC-46DA-BBDC-27C31126E67C}
