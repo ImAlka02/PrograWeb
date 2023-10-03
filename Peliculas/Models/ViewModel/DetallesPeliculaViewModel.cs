@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Nombre { get; set; } = null!;
         public string NombreOriginal { get; set; } = null!;
-        public DateOnly Fecha { get; set; }
+        public DateTime Fecha { get; set; }
         public string Descripcion { get; set; } = null!;
         public IEnumerable<PersonajeModel> Personajes { get; set; } = null!;
     }
