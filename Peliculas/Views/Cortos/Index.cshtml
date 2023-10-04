@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Peliculas.Models.ViewModel.IndexCortosViewModel>
+@{
+    Layout = "MainLayout";
+}
+
+<div id="principalPeliculas">
+
+    <div id="pelis">
+        @foreach (var c in Model)
+        {
+            <h1>@c.Categoria</h1>
+            
+                @foreach (var corto in c.Cortos)
+                {
+                <div>
+                    <a class="imgPelicula" href="~/Cortos/@corto.Nombre.Replace(" ","-")">
+                        <img src="~/images/portadas/@(corto.Id)_pc.jpg" alt="@corto.Nombre">
+                    </a>
+                    <div class="nombrePelicula">
+                        <p>@corto.Nombre</p>
+                    </div>
+                </div>
+                }
+            
+        }
+        
+    </div>
+</div>
