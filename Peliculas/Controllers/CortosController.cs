@@ -22,5 +22,24 @@ namespace Peliculas.Controllers
             });
             return View(datos);
         }
+
+        [Route("/Cortos/{nombre}")]
+        public IActionResult Detalles(string nombre)
+        {
+            nombre = nombre.Replace("_", " ");
+            PixarContext context = new();
+            var datos = context.Cortometraje.Where(x => x.Nombre == nombre).Select(y => new DatallesCortoViewModel()
+            {
+                Id = y.Id,
+                Nombre = y.Nombre ?? "Sin nombre",
+                Descripcion = y.Descripcion ?? "Sin descripcion"
+            }).FirstOrDefault();
+
+            if(datos == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(datos);
+        }
     }
 }

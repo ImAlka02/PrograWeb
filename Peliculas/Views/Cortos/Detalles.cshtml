@@ -1,0 +1,13 @@
+﻿@model Peliculas.Models.ViewModel.DatallesCortoViewModel
+@{
+    Layout = "MainLayout";
+}
+<div id="principalVerCorto">
+    <img class="blur" src="~/images/portadas/@(Model.Id)_pc.jpg">
+    <div class="datosCorto">
+        <h1>@Model.Nombre</h1>
+        <p>
+            @Model.Descripcion
+        </p>
+    </div>
+</div>
