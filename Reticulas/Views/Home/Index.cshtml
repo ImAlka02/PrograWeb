@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Reticulas.Models.ViewModels.IndexViewModel>
+@{
+    Layout = "Layout";
+}
+<h1>Oferta Académica</h1>
+<ol class="rectangle-list">
+    @foreach (var i in Model)
+    {
+    
+        <li><a href="~/@(i.Nombre.Replace(" ", "-"))/informacion">@(i.Plan) @(i.Nombre)</a></li>
+    
+    }
+</ol>
