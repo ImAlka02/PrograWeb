@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresidentesMexico", "Presid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peliculas", "Peliculas\Peliculas.csproj", "{FFF5D699-9790-49A0-B6AC-71590E293B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reticulas", "Reticulas\Reticulas.csproj", "{9725DB33-4D52-461E-A98C-1C2281432A44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reticulas", "Reticulas\Reticulas.csproj", "{9725DB33-4D52-461E-A98C-1C2281432A44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad 3", "Unidad 3", "{710D401D-F574-4BFA-A711-EF29EDBB0C6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
